@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="title_bar_translation_z">35px</dimen>
+    <dimen name="window_backdrop_translation_z">40px</dimen>
+    <dimen name="window_content_translation_z">45px</dimen>
+    <dimen name="button_translation_z">10px</dimen>
+    <dimen name="item_translation_z">10px</dimen>
+</resources>

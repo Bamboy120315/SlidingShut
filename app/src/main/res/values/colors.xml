@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主题色 -->
+    <color name="colorPrimary">#009E96</color>
+    <!-- 主题色 -->
+    <color name="colorPrimaryDark">#009E96</color>
+    <!-- 副色 -->
+    <color name="colorAccent">#FF51BBB5</color>
+
+    <!-- 透明色 -->
+    <color name="transparent">#0000</color>
+
+    <!-- 黑色 -->
+    <color name="black">#000</color>
+
+    <!-- 灰色 -->
+    <color name="grey">#999</color>
+
+    <!-- 白色 -->
+    <color name="white">#FFFF</color>
+</resources>
