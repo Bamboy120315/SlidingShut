@@ -45,6 +45,8 @@ public class InterceptFinishActivity extends BamActivity {
             }
         });
 
+        // 展开菜单
+        openMenu();
     }
 
     /**
@@ -55,13 +57,15 @@ public class InterceptFinishActivity extends BamActivity {
             openMenu();
         else if (tv_menu.getTranslationY() == 0)
             closeMenu();
-
     }
 
     /**
      * 展开菜单
      */
     private void openMenu() {
+        if (tv_menu.getVisibility() != View.GONE)
+            return;
+
         tv_menu.setAlpha(0);
         tv_menu.setVisibility(View.VISIBLE);
         view_background.setAlpha(0);
@@ -85,6 +89,9 @@ public class InterceptFinishActivity extends BamActivity {
      * 收起菜单
      */
     private void closeMenu() {
+        if (tv_menu.getTranslationY() != 0)
+            return;
+
         int height = tv_menu.getHeight();
         float btnTranslationY = btn_open_menu.getTranslationY();
 

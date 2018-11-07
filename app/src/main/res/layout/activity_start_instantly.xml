@@ -97,6 +97,31 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="14sp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:autoLink="web"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/git_str"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp"
+                android:autoLink="web"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/csdn_str"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
         </LinearLayout>
     </ScrollView>
 

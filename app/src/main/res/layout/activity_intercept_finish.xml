@@ -63,7 +63,20 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginTop="16dp"
                     android:lineSpacingMultiplier="1.2"
-                    android:text="新版右滑关闭\n如果Activity中finish()方法被拦截\n那么已经移动的界面会归位\n归位后自动重新开启右滑关闭"
+                    android:text="新版右滑关闭\n如果Activity中finish()方法被拦截\n则已经移动的界面自动归位\n归位后自动重新开启右滑关闭"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:autoLink="web"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/git_str"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
 
@@ -74,8 +87,9 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_marginTop="6dp"
+                    android:autoLink="web"
                     android:lineSpacingMultiplier="1.2"
-                    android:text=""
+                    android:text="@string/csdn_str"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
 
@@ -93,11 +107,11 @@
             android:id="@+id/tv_menu"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:background="@color/colorPrimary"
             android:gravity="center"
             android:text="菜单"
-            android:layout_marginRight="16dp"
-            android:layout_marginLeft="16dp"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:visibility="gone" />
