@@ -39,5 +39,19 @@ public class MainActivity extends BamActivity {
             }
         });
 
+        findViewById(R.id.btn_assign_view).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, AssignViewActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn_color_backdrop).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ColorBackdropActivity.class));
+            }
+        });
+
     }
 }

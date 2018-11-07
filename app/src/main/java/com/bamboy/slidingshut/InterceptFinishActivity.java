@@ -11,7 +11,9 @@ import android.widget.TextView;
 import com.bamboy.slidingshut.baseactivity.BamActivity;
 
 /**
- * Created by liushaochen on 2018/11/5.
+ * 拦截finish()情况示例
+ *
+ * Created by Bamboy on 2018/11/5.
  */
 public class InterceptFinishActivity extends BamActivity {
 

@@ -12,10 +12,11 @@ import android.view.View;
 import com.bamboy.slidingshut.R;
 
 /**
- * Created by liushaochen on 2018/10/18.
+ * 圆形进度条
+ * <p>
+ * Created by Bamboy on 2018/10/18.
  */
 public class SlopeProgress extends View {
-
     /**
      * 当前进度
      */
@@ -40,7 +41,7 @@ public class SlopeProgress extends View {
     public SlopeProgress(Context context) {
         super(context);
 
-        ringColor = ContextCompat.getColor(context, R.color.colorAccent);
+        ringColor = ContextCompat.getColor(context, R.color.colorPrimary);
     }
 
     @Override
@@ -136,17 +137,11 @@ public class SlopeProgress extends View {
     }
 
     /**
-     * 获取颜色
-     */
-    public int getRingColor() {
-        return ringColor;
-    }
-
-    /**
      * 设置颜色
      */
     public void setRingColor(int ringColor) {
-        this.ringColor = ringColor;
+        if (ringColor != 0)
+            this.ringColor = ringColor;
     }
 
     /**

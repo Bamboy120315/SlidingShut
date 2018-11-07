@@ -23,6 +23,10 @@
         <activity android:name=".UpFinishActivity" />
 
         <activity android:name=".InterceptFinishActivity" />
+
+        <activity android:name=".AssignViewActivity" />
+
+        <activity android:name=".ColorBackdropActivity" />
     </application>
 
 </manifest>

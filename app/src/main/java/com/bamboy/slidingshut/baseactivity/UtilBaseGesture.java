@@ -54,12 +54,17 @@ public class UtilBaseGesture {
     private ViewGroup rootGroup;
     /**
      * Activity的Layout的根View
+     * 【滑动过程中会移动的View】
      */
     private View rootView;
     /**
      * 滑动进度条
      */
     private SlopeProgress mProgress;
+    /**
+     * 进度条宽度
+     */
+    private int progressWidth;
 
     /**
      * 滑动关闭开关
@@ -85,8 +90,23 @@ public class UtilBaseGesture {
         rootView = rootGroup.getChildAt(0);
 
         mScreenWidth = activity.getWindowManager().getDefaultDisplay().getWidth();
-        maxMove = (int) (mScreenWidth * 0.08);
-        moveScaling = 0.3f;
+        maxMove = (int) (mScreenWidth * 0.06);
+        moveScaling = 0.2f;
+        progressWidth = mScreenWidth / 9;
+    }
+
+    /**
+     * 初始化进度条
+     */
+    private void initProgress() {
+        mProgress = new SlopeProgress(mActivity);
+        mProgress.setMaxProgress(100);
+
+        ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(progressWidth, progressWidth);
+        mProgress.setLayoutParams(params);
+
+        if (rootGroup != null)
+            rootGroup.addView(mProgress);
     }
 
     //==============================================================================================
@@ -113,12 +133,31 @@ public class UtilBaseGesture {
     }
 
     /**
+     * Activity的Layout的根View
+     * 【滑动过程中会移动的View】
+     */
+    public void setRootView(View rootView) {
+        this.rootView = rootView;
+    }
+
+    /**
      * 获取移动距离
      *
      * @return
      */
     public int getMove() {
         return move;
+    }
+
+    /**
+     * 设置进度条颜色
+     */
+    public void setProgressColor(int color) {
+        if (mProgress == null)
+            initProgress();
+
+        if (mProgress != null)
+            mProgress.setRingColor(color);
     }
 
     /**
@@ -129,7 +168,7 @@ public class UtilBaseGesture {
     public void setMove(int move) {
 
         if (move > maxMove)
-            move = (int)(maxMove + (move - maxMove) * 0.5f);
+            move = (int) (maxMove + (move - maxMove) * 0.5f);
 
         rootView.setX(move);
         this.move = move;
@@ -200,15 +239,8 @@ public class UtilBaseGesture {
 
         // 添加进度条
         if (mProgress == null) {
-            mProgress = new SlopeProgress(mActivity);
-            mProgress.setMaxProgress(100);
-
-            ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(
-                    (int) (maxMove * 1.6),
-                    (int) (maxMove * 1.6));
-            mProgress.setLayoutParams(params);
-
-            rootGroup.addView(mProgress);
+            // 初始化进度条
+            initProgress();
         }
 
         // 设置背景色
@@ -268,7 +300,7 @@ public class UtilBaseGesture {
         return true;
     }
 
-    private void finish(){
+    private void finish() {
         slideOpen = false;
         startSlidingX = mScreenWidth;
         ObjectAnimator anim = ObjectAnimator.ofInt(this, "move", getMove(), 0);

@@ -18,6 +18,8 @@ import com.bamboy.slidingshut.R;
 import java.lang.reflect.Field;
 
 /**
+ * Activity基类
+ * <p>
  * Created by Bamboy on 2018/10/24.
  */
 public class BamActivity extends Activity {
@@ -75,10 +77,6 @@ public class BamActivity extends Activity {
      */
     private void setImmerseTitleBar() {
 
-        if (rl_title == null) {
-            return;
-        }
-
         Window window = getWindow();
         window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
                 WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -95,6 +93,10 @@ public class BamActivity extends Activity {
             } catch (Error e) {
                 e.printStackTrace();
             }
+        }
+
+        if (rl_title == null) {
+            return;
         }
 
         int barHeight = getBarHeight(this);
@@ -169,7 +171,6 @@ public class BamActivity extends Activity {
         mUtilGesture.openSlideFinish(open);
     }
 
-
     /**
      * 抬起关闭
      *
@@ -181,6 +182,22 @@ public class BamActivity extends Activity {
             return;
         }
         mUtilGesture.setUpFinish(upFinish);
+    }
+
+    /**
+     * 设置进度条颜色
+     */
+    public void setProgressColor(int color) {
+        if (mUtilGesture != null)
+            mUtilGesture.setProgressColor(color);
+    }
+
+    /**
+     * 滑动View
+     * 【滑动过程中会移动的View】
+     */
+    public void setMoveView(View SlideView) {
+        mUtilGesture.setRootView(SlideView);
     }
 
     //==============================================================================================

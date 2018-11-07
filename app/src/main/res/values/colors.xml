@@ -10,9 +10,6 @@
     <!-- 透明色 -->
     <color name="transparent">#0000</color>
 
-    <!-- 黑色 -->
-    <color name="black">#000</color>
-
     <!-- 灰色 -->
     <color name="grey">#999</color>
 
