@@ -1,24 +1,4 @@
 
-app/src/main/res/values/styles.xml
-app/src/main/res/values/dimens.xml
-app/src/main/res/values/colors.xml
-app/src/main/res/layout/activity_up_finish.xml
-app/src/main/res/layout/activity_start_instantly.xml
-app/src/main/res/layout/activity_main.xml
-app/src/main/res/layout/activity_intercept_finish.xml
-app/src/main/res/layout/activity_color_backdrop.xml
-app/src/main/res/layout/activity_assign_view.xml
-app/src/main/res/drawable/radius_link.xml
-app/src/main/java/com/bamboy/slidingshut/UpFinishActivity.java
-app/src/main/java/com/bamboy/slidingshut/StartInstantlyActivity.java
-app/src/main/java/com/bamboy/slidingshut/MainActivity.java
-app/src/main/java/com/bamboy/slidingshut/InterceptFinishActivity.java
-app/src/main/java/com/bamboy/slidingshut/ColorBackdropActivity.java
-app/src/main/java/com/bamboy/slidingshut/baseactivity/UtilBaseGesture.java
-app/src/main/java/com/bamboy/slidingshut/baseactivity/SlopeProgress.java
-app/src/main/java/com/bamboy/slidingshut/baseactivity/BamActivity.java
-app/src/main/java/com/bamboy/slidingshut/AssignViewActivity.java
-app/src/main/AndroidManifest.xml
 build/android-profile/profile-2018-11-07-18-12-10-629.json
 build/android-profile/profile-2018-11-07-18-12-10-629.rawproto
 .gradle/4.1/taskHistory/taskHistory.bin
