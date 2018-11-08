@@ -37,7 +37,7 @@
             android:gravity="center"
             android:text="拦截finish()"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
     </RelativeLayout>
 
@@ -66,7 +66,7 @@
                     android:lineSpacingMultiplier="1.2"
                     android:text="新版右滑关闭\n如果Activity中finish()方法被拦截\n则已经移动的界面自动归位\n归位后自动重新开启右滑关闭"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -79,7 +79,7 @@
                     android:lineSpacingMultiplier="1.2"
                     android:text="@string/git_str"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -92,7 +92,7 @@
                     android:lineSpacingMultiplier="1.2"
                     android:text="@string/csdn_str"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
         </ScrollView>
@@ -114,7 +114,7 @@
             android:gravity="center"
             android:text="菜单"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:visibility="gone" />
 
         <Button
@@ -129,7 +129,7 @@
             android:padding="20dp"
             android:text="【展开/收起】菜单"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
     </RelativeLayout>
 

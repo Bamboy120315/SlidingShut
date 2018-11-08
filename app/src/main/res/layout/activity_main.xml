@@ -37,7 +37,7 @@
             android:gravity="center"
             android:text="@string/app_name"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
     </RelativeLayout>
 
@@ -65,7 +65,7 @@
                     android:lineSpacingMultiplier="1.2"
                     android:text="新版右滑关闭\n\n不需要透明主题\n\n界面跟随手指\n实时反馈\n\n支持两种触发模式\n默认是抬起模式\n第二种是即刻模式"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -87,7 +87,7 @@
                         android:lineSpacingMultiplier="1.2"
                         android:text="若要使用抬起模式\n调用如下代码："
                         android:textColor="@color/colorPrimary"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -100,7 +100,7 @@
                         android:padding="8dp"
                         android:text="setUpFinish(true);"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <Button
                         android:id="@+id/btn_start_up_finish"
@@ -113,7 +113,7 @@
                         android:padding="20dp"
                         android:text="点击体验 — 抬起关闭模式"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -136,7 +136,7 @@
                         android:lineSpacingMultiplier="1.2"
                         android:text="若要使用即刻模式\n调用如下代码："
                         android:textColor="@color/colorPrimary"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -149,7 +149,7 @@
                         android:padding="8dp"
                         android:text="setUpFinish(false);"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <Button
                         android:id="@+id/btn_start_instantly"
@@ -162,7 +162,7 @@
                         android:padding="20dp"
                         android:text="点击体验 — 即刻关闭模式"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -184,7 +184,7 @@
                         android:layout_marginTop="16dp"
                         android:text="如果Activity中finish()方法被拦截\n则已经移动的界面自动归位\n归位后自动重新开启右滑关闭"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <Button
                         android:id="@+id/btn_intercept_finish"
@@ -197,7 +197,7 @@
                         android:padding="20dp"
                         android:text="点击体验 — 拦截finish()"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -220,7 +220,7 @@
                         android:lineSpacingMultiplier="1.2"
                         android:text="为避免TitleBar颜色与背景色不同\n影响视觉体验\n提供只移动指定View的功能"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -231,7 +231,7 @@
                         android:lineSpacingMultiplier="1.2"
                         android:text="如果滑动过程中TitleBar不动\n就能避免滑动时界面左侧出现的空白\n大幅度减小界面的割裂感"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -242,7 +242,7 @@
                         android:lineSpacingMultiplier="1.2"
                         android:text="想要使用此功能\n调用以下代码即可："
                         android:textColor="@color/colorPrimary"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -255,7 +255,7 @@
                         android:padding="8dp"
                         android:text="setMoveView(rootView);"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <Button
                         android:id="@+id/btn_assign_view"
@@ -268,7 +268,7 @@
                         android:padding="20dp"
                         android:text="点击体验 — 指定滑动View"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -291,7 +291,7 @@
                         android:lineSpacingMultiplier="1.2"
                         android:text="为了扩展性和兼容彩色背景的情况\n进度条颜支持随意自定义\n通过以下方法设置："
                         android:textColor="@color/colorPrimary"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -304,7 +304,7 @@
                         android:padding="8dp"
                         android:text="int color = ContextCompat.getColor(context, R.color.white);\n\nsetProgressColor(color);"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                     <Button
                         android:id="@+id/btn_color_backdrop"
@@ -317,7 +317,7 @@
                         android:padding="20dp"
                         android:text="点击体验 — 彩色背景"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <TextView
@@ -331,7 +331,7 @@
                     android:lineSpacingMultiplier="1.2"
                     android:text="@string/git_str"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -344,7 +344,7 @@
                     android:lineSpacingMultiplier="1.2"
                     android:text="@string/csdn_str"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>

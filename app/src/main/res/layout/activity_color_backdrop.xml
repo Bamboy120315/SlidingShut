@@ -35,7 +35,7 @@
             android:gravity="center"
             android:text="自定义进度条颜色"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <View
             android:layout_width="match_parent"
@@ -68,7 +68,7 @@
                 android:lineSpacingMultiplier="1.2"
                 android:text="为了扩展性和兼容彩色背景的情况\n进度条颜支持随意自定义\n通过以下方法设置："
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
                 android:padding="8dp"
                 android:text="int color = ContextCompat.getColor(context, R.color.white);\n\nsetProgressColor(color);"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -94,7 +94,7 @@
                 android:lineSpacingMultiplier="1.2"
                 android:text="@string/git_str"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -107,7 +107,7 @@
                 android:lineSpacingMultiplier="1.2"
                 android:text="@string/csdn_str"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </LinearLayout>
     </ScrollView>
 

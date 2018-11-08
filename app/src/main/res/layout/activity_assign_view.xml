@@ -37,7 +37,7 @@
             android:gravity="center"
             android:text="指定滑动View"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
     </RelativeLayout>
 
@@ -65,7 +65,7 @@
                     android:lineSpacingMultiplier="1.2"
                     android:text="为避免TitleBar颜色与背景色不同\n影响视觉体验\n提供只移动指定View的功能"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
                     android:lineSpacingMultiplier="1.2"
                     android:text="例如本页面\n滑动过程中TitleBar不动\n避免了滑动时界面左侧出现的空白\n大幅度减小界面的割裂感"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
                     android:lineSpacingMultiplier="1.2"
                     android:text="想要使用此功能\n调用以下代码即可："
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -100,7 +100,7 @@
                     android:padding="8dp"
                     android:text="setMoveView(rootView);"
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
                     android:lineSpacingMultiplier="1.2"
                     android:text="@string/git_str"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -126,7 +126,7 @@
                     android:lineSpacingMultiplier="1.2"
                     android:text="@string/csdn_str"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>
