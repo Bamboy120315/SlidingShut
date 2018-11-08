@@ -63,7 +63,7 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginTop="16dp"
                     android:lineSpacingMultiplier="1.2"
-                    android:text="咯新版右滑关闭\n\n不需要透明主题\n\n界面跟随手指\n实时反馈\n\n支持两种触发模式\n默认是抬起模式\n第二种是即刻模式"
+                    android:text="新版右滑关闭\n\n不需要透明主题\n\n界面跟随手指\n实时反馈\n\n支持两种触发模式\n默认是抬起模式\n第二种是即刻模式"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
 
