@@ -91,4 +91,88 @@ Android 8.0禁止非全屏的Activity使用透明主题，
 > 视觉体验好。  
 ———————————  
 > 缺点：  
-> 没有微信的那种方案层级感强。
+> 没有微信的那种方案层级感强。  
+
+
+废话不多说，  
+这就给大家展示一下效果吧：  
+  
+## 一、抬起模式
+顾名思义  
+滑动过程中圆环进度条跟随手指而充盈  
+当圆环圆满后  
+抬起手指后才会触发finish();  
+
+想要使用抬起模式  
+调用以下代码即可：
+> setUpFinish(true);  
+> (注：默认为true，即默认抬起模式)
+![抬起模式](https://github.com/Bamboy120315/SlidingShut/blob/master/gif/gif01_upFinish.gif)
+
+## 二、即刻模式
+与抬起模式相对应  
+只要圆环圆满就触发finish();  
+相比来说  
+即刻模式更敏捷  
+但却存在误触的情况  
+选择适合自己的  
+  
+想要使用抬起模式  
+调用以下代码即可：
+> setUpFinish(false);  
+![即刻模式](https://github.com/Bamboy120315/SlidingShut/blob/master/gif/gif02_startInstantly.gif)
+
+## 三、兼容finish()被拦截的情况
+当Activity中finish()方法被拦截时  
+已经移动的界面自动归位  
+归位后自动重新开启右滑关闭  
+![finish()被拦截](https://github.com/Bamboy120315/SlidingShut/blob/master/gif/gif03_interceptFinish.gif)
+
+## 四、指定滑动View
+看了上面几个动图  
+心细的朋友可能发现了  
+在界面移动时  
+Activity左上角出现了一个白条条  
+这是因为TitleBar的颜色和界面的颜色不一致导致的  
+虽说无伤大雅  
+但作为一个视觉主义的程序员  
+这个小细节也是要优化的  
+所以我提供了只移动指定View功能  
+就是说不会整个界面都移动  
+你让他动的才会动  
+  
+想要指定滑动View  
+调用以下代码即可：
+> setMoveView(rootView);  
+![指定View](https://github.com/Bamboy120315/SlidingShut/blob/master/gif/gif04_assignView.gif)
+
+## 五、圆环颜色自定义
+不管是出于性能  
+还是出于可扩展性  
+这个圆环进度条是完全用Canvas画出来的  
+所以颜色当然是支持自定义的  
+比如界面背景色不是白色  
+而是主题色时  
+  
+想要指定圆环颜色  
+调用以下代码即可：
+> int color = ContextCompat.getColor(context, R.color.white);  
+> setProgressColor(color);  
+![彩色背景](https://github.com/Bamboy120315/SlidingShut/blob/master/gif/gif05_colorBackdrop.gif)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
