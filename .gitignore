@@ -15,6 +15,7 @@ gen/
 
 # Gradle files
 .gradle/
+.idea/
 gradle/
 build/
 /*/build/
@@ -27,27 +28,4 @@ proguard/
 
 # Log Files
 *.log
-.gradle/4.1/fileHashes/fileHashes.bin
-.gradle/4.1/fileHashes/fileHashes.lock
-.gradle/4.1/javaCompile/classAnalysis.bin
-.gradle/4.1/javaCompile/javaCompile.lock
-=======
-build/android-profile/profile-2018-11-07-18-12-10-629.json
-build/android-profile/profile-2018-11-07-18-12-10-629.rawproto
-.gradle/4.1/taskHistory/taskHistory.bin
-.gradle/4.1/taskHistory/fileSnapshots.bin
->>>>>>> 5d1503eb082357b3a440ee1a4c3412f5bd008b9e
-.gradle/4.1/javaCompile/taskHistory.bin
-.gradle/4.1/taskHistory/fileSnapshots.bin
-.gradle/4.1/taskHistory/taskHistory.bin
-.gradle/4.1/taskHistory/taskHistory.lock
-.idea/workspace.xml
-.gradle/4.1/fileHashes/fileHashes.bin
-.gradle/4.1/fileHashes/fileHashes.lock
-.gradle/4.1/javaCompile/classAnalysis.bin
-.gradle/4.1/javaCompile/javaCompile.lock
-.gradle/4.1/javaCompile/taskHistory.bin
-.gradle/4.1/taskHistory/fileSnapshots.bin
-.gradle/4.1/taskHistory/taskHistory.bin
-.gradle/4.1/taskHistory/taskHistory.lock
-.idea/workspace.xml
+app/app.iml
