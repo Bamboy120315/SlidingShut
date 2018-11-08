@@ -36,7 +36,7 @@ public class SlopeProgress extends View {
     /**
      * 线条
      */
-    private float line = 15;
+    private float line = 13;
 
     public SlopeProgress(Context context) {
         super(context);
@@ -50,7 +50,10 @@ public class SlopeProgress extends View {
         int width = getMeasuredWidth();
         int height = getMeasuredHeight();
 
-        diam = Math.min(width, height) - line * 2;
+        int diameter = Math.min(width, height);
+
+        line = diameter * 0.13f;
+        diam = diameter - line * 2;
     }
 
     @Override
