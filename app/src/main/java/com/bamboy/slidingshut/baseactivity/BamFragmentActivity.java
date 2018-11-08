@@ -12,7 +12,6 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.bamboy.slidingshut.MainActivity;
 import com.bamboy.slidingshut.R;
 
 import java.lang.reflect.Field;
