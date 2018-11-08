@@ -107,6 +107,7 @@ Android 8.0禁止非全屏的Activity使用透明主题，
 调用以下代码即可：
 > setUpFinish(true);  
 > (注：默认为true，即默认抬起模式)
+  
 ![抬起模式](https://github.com/Bamboy120315/SlidingShut/blob/master/gif/gif01_upFinish.gif)
 
 ## 二、即刻模式
@@ -120,12 +121,14 @@ Android 8.0禁止非全屏的Activity使用透明主题，
 想要使用抬起模式  
 调用以下代码即可：
 > setUpFinish(false);  
+
 ![即刻模式](https://github.com/Bamboy120315/SlidingShut/blob/master/gif/gif02_startInstantly.gif)
 
 ## 三、兼容finish()被拦截的情况
 当Activity中finish()方法被拦截时  
 已经移动的界面自动归位  
 归位后自动重新开启右滑关闭  
+
 ![finish()被拦截](https://github.com/Bamboy120315/SlidingShut/blob/master/gif/gif03_interceptFinish.gif)
 
 ## 四、指定滑动View
@@ -144,6 +147,7 @@ Activity左上角出现了一个白条条
 想要指定滑动View  
 调用以下代码即可：
 > setMoveView(rootView);  
+
 ![指定View](https://github.com/Bamboy120315/SlidingShut/blob/master/gif/gif04_assignView.gif)
 
 ## 五、圆环颜色自定义
@@ -158,6 +162,7 @@ Activity左上角出现了一个白条条
 调用以下代码即可：
 > int color = ContextCompat.getColor(context, R.color.white);  
 > setProgressColor(color);  
+
 ![彩色背景](https://github.com/Bamboy120315/SlidingShut/blob/master/gif/gif05_colorBackdrop.gif)
 
 
