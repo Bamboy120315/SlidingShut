@@ -3,14 +3,11 @@ package com.bamboy.slidingshut.baseactivity;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Build;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.DecelerateInterpolator;
 
 /**
  * BamActivity触摸工具类
@@ -89,7 +86,10 @@ public class UtilBaseGesture {
         rootGroup = activity.findViewById(android.R.id.content);
         rootView = rootGroup.getChildAt(0);
 
-        mScreenWidth = activity.getWindowManager().getDefaultDisplay().getWidth();
+        int width = activity.getWindowManager().getDefaultDisplay().getWidth();
+        int height = activity.getWindowManager().getDefaultDisplay().getHeight();
+
+        mScreenWidth = Math.min(width, height);
         maxMove = (int) (mScreenWidth * 0.06);
         moveScaling = 0.2f;
         progressWidth = mScreenWidth / 9;
